@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheetFragment"
+    style="@style/Animation.Design.BottomSheetDialog"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@drawable/dialog"
+    android:visibility="visible"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="32dp">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:paddingTop="30dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarButtonDialog" />
+
+    <ImageButton
+        android:id="@+id/calendarButtonDialog"
+        android:layout_width="74dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/calendarImageBt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterDate"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+    <ImageButton
+        android:id="@+id/satisfactionButton"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/satisfactionLevel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toEndOf="@+id/calendarButtonDialog"
+        app:layout_constraintTop_toBottomOf="@+id/enterDate"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/ic_baseline_emoji_emotions_24" />
+
+    <ImageButton
+        android:id="@+id/saveToPostBt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:buttonTint="@color/endGColor"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_baseline_arrow_upward_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintStart_toEndOf="@+id/enterDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSatisfaction"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:paddingBottom="30dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/satisfactionButton">
+
+        <RadioButton
+            android:id="@+id/radioButtonHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:buttonTint="@color/endGColor"
+            android:minHeight="48dp"
+            android:text="@string/radio_high" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMed"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:buttonTint="@color/endGColor"
+            android:minHeight="48dp"
+            android:text="@string/radio_med" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLow"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:buttonTint="@color/endGColor"
+            android:minHeight="48dp"
+            android:text="@string/radio_low" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/showDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/SelectDate"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/satisfactionButton"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toEndOf="@+id/calendarButtonDialog"
+        app:layout_constraintTop_toBottomOf="@+id/enterDate"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/enterDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/enter_date_hint"
+        android:textColor="@color/buttonColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

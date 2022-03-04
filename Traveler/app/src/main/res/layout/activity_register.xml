@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/gradiant_bg"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-35dp">
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/endGColor"
+        android:fontFamily="@font/roboto_bold_italic"
+        android:text="@string/registerButton"
+        android:textColor="@color/buttonColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/registerPasswordEt"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roboto_bold_italic"
+        android:text="@string/signinButton"
+        android:textColor="@color/buttonColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/registerButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerPasswordEt"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <EditText
+        android:id="@+id/usernameEt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/usernameRegisterEt"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerEmailEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planeImageView"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <EditText
+        android:id="@+id/registerEmailEt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/emailRegisterEt"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerPasswordEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planeImageView"
+        app:layout_constraintVertical_bias="0.971" />
+
+    <EditText
+        android:id="@+id/registerPasswordEt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/passwordRegisterEt"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planeImageView" />
+
+    <ImageView
+        android:id="@+id/planeImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plane" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

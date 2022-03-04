@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Traveler</string>
+    <string name="titleText">Collect your favorite destinations</string>
+    <string name="getStartedText">Get started</string>
+    <string name="registerButton">Register</string>
+    <string name="signinButton">Login</string>
+    <string name="emailLoginEt">Email</string>
+    <string name="passwordLoginEt">Password</string>
+    <string name="usernameRegisterEt">Username</string>
+    <string name="emailRegisterEt">Email</string>
+    <string name="passwordRegisterEt">Password</string>
+    <string name="saveCityButton">Save</string>
+    <string name="cityMemories">City memories:</string>
+    <string name="cityName">City name:</string>
+    <string name="addDate">Add date:</string>
+    <string name="addLocation">Add location:</string>
+    <string name="menuTitle">Add memories</string>
+    <string name="menuSignout">Sign out</string>
+    <string name="NoThoughtsHint">No cities entered</string>
+    <string name="cityDetails">City details</string>
+    <string name="list">City list</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addImage">Add image</string>
+    <string name="SelectImages">Select your images</string>
+    <string name="enter_date_hint"><![CDATA[Enter date & level of satisfaction]]></string>
+    <string name="calendarImageBt">Calendar Icon</string>
+    <string name="satisfactionLevel">Level of satisfaction</string>
+    <string name="radio_high">High</string>
+    <string name="radio_med">Medium</string>
+    <string name="radio_low">Low</string>
+    <string name="date_text">"Date "</string>
+    <string name="SelectDate">Select date</string>
+    <string name="maps">Maps</string>
+    <string name="my_profile">My profile</string>
+    <string name="noCitySelected">No city selected</string>
+    <string name="updateUser">Update user</string>
+    <string name="username">Username</string>
+    <string name="deleteCity">Delete city</string>
+</resources>

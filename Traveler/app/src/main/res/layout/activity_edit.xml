@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_bg"
+    android:id="@+id/editMyProfile"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp" />
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageButton
+            android:id="@+id/arrowEditBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="18dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/addImage_edit_bt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_add_to_photos_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="195dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="@color/centerGColor"
+        android:elevation="50dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_person_ep"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:background="@android:color/transparent"
+        android:translationZ="90dp"
+        app:srcCompat="@drawable/ic_baseline_person_outline_24" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:translationZ="90dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username_editProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/username"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationZ="90dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_editProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/update_profile"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/buttonColor"
+            android:fontFamily="@font/roboto_bold_italic"
+            android:backgroundTint="@color/endGColor"
+            android:layout_marginTop="150dp"
+            android:text="@string/updateUser"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
